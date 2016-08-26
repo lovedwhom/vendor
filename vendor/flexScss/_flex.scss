@@ -1,0 +1,27 @@
+//display：flex;
+@mixin flexCompatible{
+  display:-webkit-box;display:-webkit-flex; display:-ms-flexbox;display:flex
+}
+//direction
+@mixin flexDirection{
+  -webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;
+}
+//count of flex
+@mixin flexCount($count){
+  -webkit-box-flex:$count;-webkit-flex:$count;-ms-flex:$count;flex:$count;
+}
+// v-align
+@mixin flexAlign{
+  -webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;
+}
+
+@mixin flexPackCenter{
+  -webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+}
+//justify
+@mixin flexPackJustify{
+  -webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between
+}
+@mixin flexAround{
+  -webkit-justify-content: space-around;justify-content: space-around;
+}

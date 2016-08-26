@@ -1,0 +1,6 @@
+$designWidth:640;
+$remCount:6.4;
+
+@function px2Rem($px){
+  @return $px/$designWidth*$remCount * 1rem
+}
